@@ -95,6 +95,19 @@ export const Skills = () => {
         { name: "Node.js", level: 30, icon: "💚" },
       ],
     },
+    {
+      category: "Tools & Workflow",
+      icon: Cpu,
+      color: "from-gray-500 to-slate-500",
+      glow: "glow-accent",
+      skills: [
+        { name: "Git & GitHub", level: 90, icon: "🔧" },
+        { name: "Figma", level: 85, icon: "🎯" },
+        { name: "UI/UX Design", level: 80, icon: "🎨" },
+        { name: "VS Code", level: 95, icon: "💻" },
+        { name: "npm/yarn", level: 85, icon: "📦" },
+      ],
+    },
   ];
 
   const techStack = [
@@ -105,7 +118,9 @@ export const Skills = () => {
     { name: "Tailwind", icon: "🎨", category: "Styling" },
     { name: "AWS", icon: "☁️", category: "Cloud" },
     { name: "GraphQL", icon: "🔗", category: "API" },
+    { name: "Git", icon: "🔧", category: "Version Control" },
     { name: "Figma", icon: "🎯", category: "Design" },
+    { name: "UI/UX", icon: "🎨", category: "Design" },
     { name: "AI Agents", icon: "🤖", category: "AI", isNew: true },
     { name: "MCPs", icon: "🔗", category: "AI", isNew: true },
   ];
