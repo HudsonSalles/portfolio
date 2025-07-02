@@ -71,10 +71,10 @@ function App() {
         <Header />
         <main className="relative">
           <Hero />
+          <Projects />
           <About />
           <Skills />
           <Companies />
-          <Projects />
           <Contact />
         </main>
       </div>
