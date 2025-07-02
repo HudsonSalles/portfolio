@@ -11,10 +11,9 @@ import {
   Users,
   Zap,
 } from "lucide-react";
-import { useState } from "react";
 
 export const About = () => {
-  const [activeCard, setActiveCard] = useState<number | null>(null);
+  // const [activeCard, setActiveCard] = useState<number | null>(null);
 
   const bentoItems = [
     {

@@ -17,7 +17,7 @@ export const Skills = () => {
   const [activeSkill, setActiveSkill] = useState<number | null>(null);
 
   // Text scramble effect
-  const scrambleText = (text: string, duration: number = 2000) => {
+  const scrambleText = (text: string) => {
     const chars = "!@#$%^&*()_+-=[]{}|;:,.<>?";
     const textArray = text.split("");
     let iterations = 0;
@@ -25,7 +25,7 @@ export const Skills = () => {
     const interval = setInterval(() => {
       setScrambledText(
         textArray
-          .map((char, index) => {
+          .map((_, index) => {
             if (index < iterations) {
               return text[index];
             }
