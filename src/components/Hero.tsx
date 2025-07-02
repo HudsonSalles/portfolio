@@ -1,4 +1,4 @@
-import { ArrowDown, Code2, Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { ArrowDown, Code2, Github, Linkedin, Mail } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const Hero = () => {
@@ -20,7 +20,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 sm:pt-0"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 md:pt-0"
     >
       {/* Simple Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800" />
@@ -32,18 +32,18 @@ const Hero = () => {
         <div className="floating-slow absolute bottom-32 left-1/4 w-24 h-24 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 rounded-full blur-lg" />
       </div>
 
-      <div className="container mx-auto px-6 relative z-10 py-8 sm:py-0">
+      <div className="container mx-auto px-6 relative z-10 py-8 md:py-0">
         <div className="max-w-4xl mx-auto text-center">
           {/* Profile Image */}
           <div
-            className={`relative mb-6 sm:mb-8 transform transition-all duration-1000 ${
+            className={`relative lg:mt-12 mb-4 md:mb-6 transform transition-all duration-1000 ${
               isLoaded
                 ? "translate-y-0 opacity-100"
                 : "translate-y-10 opacity-0"
             }`}
           >
             <div className="relative inline-block">
-              <div className="w-28 h-28 sm:w-32 sm:h-32 mx-auto rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
+              <div className="w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 mx-auto rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
                 <img
                   src="/profile.jpg"
                   alt="Hudson Salles"
@@ -62,7 +62,7 @@ const Hero = () => {
                 : "translate-y-10 opacity-0"
             }`}
           >
-            <h1 className="text-5xl md:text-7xl font-bold mb-4 leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
               <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
                 Hudson
               </span>{" "}
@@ -70,21 +70,17 @@ const Hero = () => {
                 Salles
               </span>
             </h1>
-            <div className="text-xl md:text-2xl text-gray-300 mb-4">
+            <div className="text-lg md:text-xl text-gray-300 mb-4">
               <span className="text-blue-400 font-semibold">
                 Frontend Developer
               </span>{" "}
               • Mobile & Web Specialist
             </div>
-            <div className="flex items-center justify-center gap-2 text-gray-400">
-              <MapPin className="w-5 h-5 text-blue-400" />
-              <span>São Paulo, Brazil</span>
-            </div>
           </div>
 
           {/* Description */}
           <div
-            className={`mb-12 transform transition-all duration-1000 delay-500 ${
+            className={`mb-8 transform transition-all duration-1000 delay-500 ${
               isLoaded
                 ? "translate-y-0 opacity-100"
                 : "translate-y-10 opacity-0"
@@ -115,11 +111,13 @@ const Hero = () => {
             {techBadges.map((tech, index) => (
               <div
                 key={tech.name}
-                className="flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 hover:bg-white/10 hover:scale-105 transition-all duration-300"
+                className="flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-3 py-1.5 hover:bg-white/10 hover:scale-105 transition-all duration-300"
                 style={{ animationDelay: `${800 + index * 100}ms` }}
               >
-                <span className="text-lg">{tech.icon}</span>
-                <span className="text-gray-300 font-medium">{tech.name}</span>
+                <span className="text-sm">{tech.icon}</span>
+                <span className="text-gray-300 font-medium text-sm">
+                  {tech.name}
+                </span>
               </div>
             ))}
           </div>
@@ -134,9 +132,9 @@ const Hero = () => {
           >
             <a
               href="#projects"
-              className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center gap-3"
+              className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center gap-2 text-sm"
             >
-              <Code2 className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+              <Code2 className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
               View My Work
             </a>
           </div>
