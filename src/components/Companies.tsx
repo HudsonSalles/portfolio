@@ -1,6 +1,23 @@
 export const Companies = () => {
   const companies = [
     {
+      name: "Moniai",
+      description: "AI-Powered Digital Solutions",
+      image: "/moniai.jpg",
+      url: "https://www.moniai.com.br/",
+      role: "Frontend Developer",
+      technologies: [
+        "AWS",
+        "S3",
+        "CloudFront",
+        "Google Analytics",
+        "Google Tag Manager",
+        "React",
+        "Next.js",
+        "Tailwind",
+      ],
+    },
+    {
       name: "LP Digital",
       description: "Influencer Marketing Platform",
       image: "/digital.jpg",
@@ -38,7 +55,14 @@ export const Companies = () => {
       image: "/english-with-labelle.jpg",
       url: "https://www.englishwithlabelle.com/",
       role: "Frontend Developer",
-      technologies: ["ReactJS", "AWS Cognito", "TypeScript"],
+      technologies: [
+        "ReactJS",
+        "AWS Cognito",
+        "TypeScript",
+        "Google Analytics",
+        "Google Tag Manager",
+        "Tailwind",
+      ],
     },
     {
       name: "Orav Engenharia",

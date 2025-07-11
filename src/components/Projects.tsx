@@ -4,6 +4,26 @@ export const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: "Moniai - AI-Powered Digital Solutions",
+      description:
+        "Frontend development for Moniai, an innovative AI-powered solutions provider. Built with Next.js and React, utilizing AWS infrastructure including S3 and CloudFront for scalable content delivery. Implemented comprehensive analytics with Google Analytics and Google Tag Manager.",
+      image: "/moniai.jpg",
+      technologies: [
+        "React",
+        "Next.js",
+        "AWS",
+        "S3",
+        "CloudFront",
+        "Tailwind",
+        "Google Analytics",
+        "Google Tag Manager",
+      ],
+      githubUrl: "https://github.com/hudsonsalles",
+      liveUrl: "https://www.moniai.com.br/",
+      company: "Moniai",
+    },
+    {
+      id: 2,
       title: "LP Digital - Influencer Platform",
       description:
         "Frontend development for LaunchPad Digital, an innovative influencer marketing platform. Built with NextJS and modern React technologies to create scalable solutions for digital marketing campaigns.",
@@ -14,7 +34,7 @@ export const Projects = () => {
       company: "LP Digital",
     },
     {
-      id: 2,
+      id: 3,
       title: "Liqi - Digital Assets Platform",
       description:
         "Frontend development for Liqi, a comprehensive digital assets and investment platform. Created responsive interfaces with React and styled components, focusing on user experience and financial data visualization.",
@@ -25,7 +45,7 @@ export const Projects = () => {
       company: "Liqi",
     },
     {
-      id: 3,
+      id: 4,
       title: "Liqi Crypto Wallet & Trading App",
       description:
         "Mobile application development for Liqi's cryptocurrency wallet and trading platform. Built with React Native and Expo, featuring secure transactions, real-time market data, and intuitive trading interfaces. (No longer available)",
@@ -37,7 +57,7 @@ export const Projects = () => {
       status: "discontinued",
     },
     {
-      id: 4,
+      id: 5,
       title: "RSTcom - Corporate Events Platform",
       description:
         "Frontend development for RSTcom, a specialized corporate events management platform. Created solutions for event planning, execution, and management with focus on technology and innovation.",
@@ -48,7 +68,7 @@ export const Projects = () => {
       company: "RSTcom",
     },
     {
-      id: 5,
+      id: 6,
       title: "4YourLive - Digital Events Platform",
       description:
         "Frontend development for 4YourLive, a comprehensive digital events platform. Built interactive features for webinars, hybrid events, and virtual conferences with 3D environments and real-time streaming capabilities.",
@@ -59,7 +79,7 @@ export const Projects = () => {
       company: "4YourLive",
     },
     {
-      id: 6,
+      id: 7,
       title: "English with Labelle - Learning Platform",
       description:
         "Currently developing a comprehensive educational platform with separate panels for students, teachers, and administrators. Built with modern AWS services including Cognito for authentication and AppSync for real-time data synchronization.",
@@ -69,7 +89,9 @@ export const Projects = () => {
         "TypeScript",
         "AWS Cognito",
         "AWS AppSync",
-        "Tailwind CSS",
+        "Tailwind",
+        "Google Analytics",
+        "Google Tag Manager",
       ],
       githubUrl: "https://github.com/hudsonsalles",
       liveUrl: "https://www.englishwithlabelle.com/",
@@ -77,7 +99,7 @@ export const Projects = () => {
       status: "in-development",
     },
     {
-      id: 7,
+      id: 8,
       title: "Orav Projetos e Engenharia - Corporate Website",
       description:
         "WordPress development for Orav Projetos e Engenharia, a construction and engineering company founded in 2013. Implemented Google Analytics and Google Tags for comprehensive tracking and analytics. Features include project management, automation systems, and construction services showcase.",
